@@ -39,7 +39,7 @@ console.log(newString.trim());
 //Replace :- to remove any unwanted character from our url or string we use replace 
 const url = "https://arpan.com/arpan%20bhati";
 
-console.log(url.replace('%20','-'));  
+// console.log(url.replace('%20','-'));  
 
 //  to check whether or url or any string contains some special character or substring we use includes.
 // console.log(url.includes('arpan'));
@@ -49,4 +49,4 @@ console.log(url.replace('%20','-'));
 // To convert a string into an array with a seperating medium we use split method.
 
 const newName = "hitesth-game-name-hc";
-console.log(newName.split('-'));
+// console.log(newName.split('-'));
