@@ -29,7 +29,7 @@ const JsUser = {
 // But if we want to access the symbol then the only way to access the symbol is defined below
 // console.log(JsUser[myKey]);
 
-// We can notice that we haven't provided the symbol name name as string inside the square bracktes as we have used before
+// We can notice that we haven't provided the symbol name as string inside the square bracktes as we have used before
 // to acces the other keys of the object.
 
 // If we wnat to change or update any key of the object then this can be done as below
@@ -37,7 +37,7 @@ JsUser.email = "hitesh@chatgpt.com";
 
 // console.log(JsUser["email"]);
 
-// If we want ti freeze our object, means we want that if we change any key, then change must not happen then we 
+// If we want to freeze our object, means we want that if we change any key, then change must not happen then we 
 // use below mwthod
 
 // Object.freeze(JsUser);
