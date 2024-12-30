@@ -85,11 +85,32 @@ const obj3 = {...obj1,...obj2,...obj4};
 
 // If we want to check that the object contains the particular keys or not then we can do that as
 // below 
-console.log(tinderUSer.hasOwnProperty('isLoggedIn'));
+//console.log(tinderUSer.hasOwnProperty('isLoggedIn'));
 //O/P :- true
 
-console.log(tinderUSer.hasOwnProperty('isLogged'));
+//console.log(tinderUSer.hasOwnProperty('isLogged'));
 //O/P :- false
 
 // as isLoggedIn is a key of object so it will return true and isLogged in not the key, so it will
 // return false.
+
+const course = {
+    courseName : "JS in Hindi",
+    price : "999",
+    courseInstructor : "Hitesh"
+}
+// If we want to access any key of the object then we use the below method, but what if we want to 
+// use it again and again
+console.log(course.courseInstructor);
+
+// To reduce our work and time we use the below method so that we don't have to write the big names
+
+const {courseInstructor} = course;
+console.log(courseInstructor);
+
+// We can do it more concise as 
+const {courseInstructor : instructor} = course;
+
+// Now, we have to write only below line of code to access courseInstructor
+
+console.log(instructor);
