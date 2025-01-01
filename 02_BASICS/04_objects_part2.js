@@ -20,11 +20,11 @@ tinderUSer.isLoggedIn = false;
 
 // If we want to use objects inside the objects, then we have to use the below method:
 const regularUser = {
-    email : "some@gmail.com",
-    fullname:{
-        userfullname:{
-            firstname : "Arpan",
-            lastname : "Bhati"
+    email: "some@gmail.com",
+    fullname: {
+        userfullname: {
+            firstname: "Arpan",
+            lastname: "Bhati"
         }
     }
 }
@@ -46,9 +46,9 @@ const regularUser = {
 
 //Merging two or more objects
 
-const obj1 = {1:"a", 2:"b"}
-const obj2 = {3:"a", 4:"b"}
-const obj4 = {5:"a", 6:"b"}
+const obj1 = { 1: "a", 2: "b" }
+const obj2 = { 3: "a", 4: "b" }
+const obj4 = { 5: "a", 6: "b" }
 
 //const obj3 = Object.assign(obj1, obj2, obj4);
 
@@ -66,7 +66,7 @@ const obj4 = {5:"a", 6:"b"}
 
 // Now we will see the spread method to merge two or more objects
 
-const obj3 = {...obj1,...obj2,...obj4};
+const obj3 = { ...obj1, ...obj2, ...obj4 };
 
 //console.log(obj3);
 
@@ -77,7 +77,7 @@ const obj3 = {...obj1,...obj2,...obj4};
 
 // Output :- [ 'id' , 'name' , 'isLoggedIn'] and ['123abcc' , 'Sammy' , false]
 
-// We can see that output are th e arrays of the values of Keys and their Values of the object.
+// We can see that output are the arrays of the values of Keys and their Values of the object.
 
 // If want to get the all key value pairs of the object then we can do as:
 
@@ -95,9 +95,9 @@ const obj3 = {...obj1,...obj2,...obj4};
 // return false.
 
 const course = {
-    courseName : "JS in Hindi",
-    price : "999",
-    courseInstructor : "Hitesh"
+    courseName: "JS in Hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
 }
 // If we want to access any key of the object then we use the below method, but what if we want to 
 // use it again and again
@@ -105,11 +105,11 @@ console.log(course.courseInstructor);
 
 // To reduce our work and time we use the below method so that we don't have to write the big names
 
-const {courseInstructor} = course;
+const { courseInstructor } = course;
 console.log(courseInstructor);
 
 // We can do it more concise as 
-const {courseInstructor : instructor} = course;
+const { courseInstructor: instructor } = course;
 
 // Now, we have to write only below line of code to access courseInstructor
 
